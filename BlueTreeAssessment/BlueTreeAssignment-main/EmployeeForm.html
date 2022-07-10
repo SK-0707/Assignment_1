@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueTree Assignment</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>New Employee Registration Form</h1>
+        <form class="form">
+            <div class="form-group">
+                <label for="name">Employee Name</label>
+                <input type="text" class="form-control" id="empName" placeholder="Employee Full Name">
+              </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date Of Birth</label>
+                <input type="date" class="form-control" id="dob" placeholder="Date Of Birth" required>
+            </div>
+            <div class="form-group">
+                <label for="salary">Salary</label>
+                <input type="number" class="form-control" id="salary" placeholder="Salary">
+            </div>
+            <div class="form-group">
+                <label for="dob">Status</label>
+                <select class="form-control" id="status">
+                    <option value="true">Active</option>
+                    <option value="false">Inactive</option>
+                  </select>
+            </div>
+          <button class="btn btn-info" type="button" onclick="validateEmployee()" >Add Employee</button>
+          <a href="index.html"><button class="btn btn-success" type="button">HOME</button></a>
+        </form>
+      </div>
+      
+
+</body>
+<script src="script1.js">
+</script>
+</html>
+
